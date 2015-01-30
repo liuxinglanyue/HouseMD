@@ -136,6 +136,21 @@ public class Inspect extends TransformCommand implements FieldFilterCompleter {
         return ClassSimpleNameCompleter$class.completeClassSimpleName(this, buffer, cursor, candidates);
     }
 
+    @Override
+    public String name() {
+        return null;
+    }
+
+    @Override
+    public String description() {
+        return null;
+    }
+
+    @Override
+    public PrintOut out() {
+        return null;
+    }
+
     static class FieldFilter {
 
         private final String classSimpleName;

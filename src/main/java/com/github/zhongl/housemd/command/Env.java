@@ -82,4 +82,19 @@ public class Env extends Command implements Completer {
         if (candidates.isEmpty()) return -1;
         return cursor - buffer.length();
     }
+
+    @Override
+    public String name() {
+        return null;
+    }
+
+    @Override
+    public String description() {
+        return null;
+    }
+
+    @Override
+    public PrintOut out() {
+        return null;
+    }
 }
